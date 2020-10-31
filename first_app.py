@@ -15,7 +15,6 @@ DATA_URL = 'https://21box-assets.oss-cn-beijing.aliyuncs.com/uber-raw-data-sep14
 
 @st.cache
 def load_data(nrows):
-    with open(filename, 'rb') as csvfile:
     data = pd.read_csv(DATA_URL, nrows=nrows)
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)
