@@ -12,4 +12,6 @@ enableCORS = false\n\
 enableXsrfProtection = false\n\
 enableWebsocketCompression = false\n\
 port = 10000\n\
+[browser]\n\
+gatherUsageStats = false\n\
 " > ~/.streamlit/config.toml
